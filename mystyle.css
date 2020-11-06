@@ -64,10 +64,10 @@ header {
 .hamburger:focus{
     outline: none;
 }
-#navbar ul{
+#navbar .nav-ul{
     padding-right: 0;
 }
-#navbar ul li {
+#navbar .nav-ul li {
     display: inline-block;
     font-size: 18px;
 }
@@ -96,11 +96,14 @@ header {
 
 
 @media screen and (max-width: 767px){
-    #nav-ul{
+    .nav-ul{
         display: none;
         width: 100%;
     }
-    #nav-ul.show{
+    #navbar .nav-ul li {
+        margin-right: 5px;
+    }
+    .nav-ul.show{
         display: flex;
         justify-content: center;
     }

@@ -8,25 +8,32 @@
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="./mystyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link type="text/css" rel="stylesheet" href="./css/lightgallery.css"/>
+    <link rel="stylesheet" href="./css/mystyle.css">
     <title>Football</title>
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav id="navbar">
             <div dir="ltr" class="container">
-                <h1 class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.png" class="logo-img" height="80px">
+                </a>
+
+                <!-- <h1 class="logo">
                     <a href="./index.html">Natan Football</a>
-                </h1>
+                </h1> -->
 
                 <button class="hamburger" id="hamburger">
                     <i class="fas fa-bars"></i>
                 </button>
                 <ul class="nav-ul">
                     <li><a class="btn" href="#">צור קשר</a></li>
+                    <li><a class="btn" href="#gallery">גלריה</a></li>
                     <li><a class="btn" href="#">מה מציעים</a></li>
-                    <li><a class="btn" href="#">קצת עלינו</a></li>
+                    <li><a class="btn" href="#story">קצת עלינו</a></li>
                     <li><a class="btn" href="./index.html">דף הבית</a> </li>
 
                 </ul>
@@ -34,7 +41,7 @@
         </nav>
         <section id="showcase">
             <div class="container">
-                <div class="showcase-text">
+                <div class="showcase-text animate__animated animate__backInRight">
                     <h1>חוג הכדורגל<br> המוביל בישראל</h1>
                     <h2>בהנחייתו של נתן לוזון שחקן עבר בגבעת אולגה</h2>
                     <p>בואו לשחק עם עוד חברה שנושמים כדורגל מכל הגילאים (21+)</p>
@@ -42,15 +49,15 @@
                 </div>
             </div>
         </section>
-        <img class="ball-mobile" src="./img/soccer-ball.png">
+        <!-- <img class="ball-mobile" src="./img/soccer-ball.png"> -->
     </header>
     <section id="story">
         <div class="container">
             <div class="story-title">
                 <h1>הסיפור שלנו</h1>
             </div>
-            <div class="box">
-                <div class="box-text">
+            <div class="story-box">
+                <div class="story-box-text-1">
                     <h1>נתן לוזון</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rerum ea tempora dolores aliquam,
                         tenetur ducimus delectus in, enim architecto quibusdam quis doloremque aut repellendus?
@@ -58,15 +65,105 @@
                         veniam, deserunt inventore hic! Dolores quae, sunt hic velit aliquid tempore itaque ipsum,
                         explicabo officiis voluptatibus laudantium voluptatem tenetur est sint.</p>
                 </div>
-                <div class="box-img">
+                <div class="story-box-img">
                     <img
                         src="https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2020/08/25/nz_koeman_250841.jpg?itok=hmuL7rXM&timestamp=1598320256">
                 </div>
             </div>
+            <div id="box-2" class="story-box">
+                <div id="box-img-2" class="story-box-img">
+                    <img
+                        src="https://www.straitstimes.com/sites/default/files/styles/article_pictrure_780x520_/public/articles/2020/08/25/nz_koeman_250841.jpg?itok=hmuL7rXM&timestamp=1598320256">
+                </div>
+                <div id="box-text-2" class="story-box-text-2">
+                    <h1>נתן לוזון</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi rerum ea tempora dolores aliquam,
+                        tenetur ducimus delectus in, enim architecto quibusdam quis doloremque aut repellendus?
+                        Molestias ea deleniti labore culpa.Voluptatibus ab, fugit quidem ex, soluta alias vero nemo
+                        veniam, deserunt inventore hic! Dolores quae, sunt hic velit aliquid tempore itaque ipsum,
+                        explicabo officiis voluptatibus laudantium voluptatem tenetur est sint.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="" id="features" onscroll="fadeUpAnim()">
+        <h1 >מה מציעים</h1>
+        <div class="container">
+            <div class="feature-box  wow animate__animated animate__bounceIn ">
+                <img src="./img/football-team.png">
+                <h3>צוות אימון מקצועי</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim placeat officiis mollitia
+                    eligendi culpa minima debitis cum nobis quia odio inventore dolore nulla veritatis, dolorum unde eos
+                    et quas.</p>
+            </div>
+            <div class="feature-box wow animate__animated animate__bounceIn ">
+                <img src="./img/soccer-field.png">
+                <h3>מגרש דשא</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim placeat officiis mollitia
+                    eligendi culpa minima debitis cum nobis quia odio inventore dolore nulla veritatis, dolorum unde eos
+                    et quas.</p>
+            </div>
+            <div class="feature-box wow animate__animated animate__bounceIn">
+                <img src="./img/soccer-jersey.png">
+                <h3>תלבושות</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim placeat officiis mollitia
+                    eligendi culpa minima debitis cum nobis quia odio inventore dolore nulla veritatis, dolorum unde eos
+                    et quas.</p>
+            </div>
+            <div class="feature-box wow animate__animated animate__bounceIn">
+                <img src="./img/soccer-training.png">
+                <h3>פיתוח יכולות המשחק</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit enim placeat officiis mollitia
+                    eligendi culpa minima debitis cum nobis quia odio inventore dolore nulla veritatis, dolorum unde eos
+                    et quas.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="gallery">
+        <div class="container">
+            <h1 >גלריה</h1>
+            <div id="aniimated-thumbnials">
+                <a href="./img/main-img.jpg">
+                    <img src="img/img-media.jpg"   />
+                </a>
+                <a href="img/check.jpeg">
+                    <img src="img/check.jpeg" />
+                </a>
+                <a href="img/check.jpeg">
+                    <img src="img/check.jpeg" />
+                </a>
+
+                <a href="img/check.jpeg">
+                    <img src="img/check.jpeg" />
+                </a>
+                <a href="img/check.jpeg">
+                    <img src="img/check.jpeg" />
+                </a>
+
+            </div>
         </div>
     </section>
 
-    <script src="./app.js"></script>
+    <footer id="footer">
+        <a href="https://wa.me/9720506246715" target="_blank">
+            <i class="fab fa-whatsapp-square fa-3x"></i>
+        </a>
+        <p>Natan Football &copy; 2014, All RIghts Reserved</p>
+    </footer>
+    <!--Make the Animation active when user scroll to this section-->
+    <script src="./js/wow.min.js">
+    </script>
+    <!--lightgallery Make the gallery-->
+    <script src="./js/lightgallery.min.js"></script>
+
+    <!-- lightgallery plugins -->
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="js/lg-fullscreen.min.js"></script>
+
+    <script src="./js/app.js">
+    </script>
+
 </body>
 
 </html>

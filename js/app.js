@@ -8,22 +8,6 @@ hamburger.addEventListener('click', () =>{
 });
 
 
-/*story mobile */
-let screenSize = window.matchMedia("(max-width: 768px)");
-textBeforeImg(screenSize);
-screenSize.addListener(textBeforeImg);
-function textBeforeImg(size){
-    let box2 = document.querySelector("#box-2");
-    let boxText = document.querySelector("#box-text-2");
-    let boxImg = document.querySelector("#box-img-2");
-
-    if(size.matches){
-        box2.insertBefore(boxText,boxImg);
-    }
-    else{
-        box2.insertBefore(boxImg,boxText);
-    }
-}
 
 //animation
 window.onload = function() {
